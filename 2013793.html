@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Final Assessment INFO 2302</title>
+
+    <script>
+        let date = new Date(); 
+        
+        function displayTime(){
+            let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(); 
+            document.getElementById('time').innerHTML = time; 
+        }
+      
+        function displayDate(){
+            let today = date.getDate() + " / " + date.getMonth() +1 + " / " + date.getFullYear(); 
+            document.getElementById('date').innerHTML = today; 
+        }
+
+
+    </script>
+
+    <style>
+        * {
+            margin: 0; padding: 0; 
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: none;
+            outline: none;
+            list-style: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: .2s all ease;
+        }
+
+        body{
+            background: rgb(244, 244, 244);
+            height: 100vh;
+            width: 100%;
+
+        }
+
+        .datetime{
+            display: flex;
+            justify-content: space-around;
+            width: auto;
+        }
+
+        h1{
+            color: blue;
+            font-weight: bold;
+            font-size: 3.2rem;
+            text-align: center;
+            margin-bottom: 1.3em;
+        }
+
+
+
+       .btn{
+           display: flex;
+           justify-content: space-around;
+           margin: 1.6em ;
+       }
+
+       .btn button{
+           padding: 1.5em;
+           cursor: pointer;
+           font-size: 12px;
+           border-radius: 15px;
+           background: rgb(237, 184, 184);
+       }
+
+       .btn button:hover{
+           color: white;
+           background: black;
+       }
+        .main-title{
+            text-align: center;
+
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <h2 class="main-title">Final Assessment INFO 2302</h2>
+
+    <div class="btn">
+        <button type="button" onclick="displayDate()">Display current date</button>
+        <button type="button" onclick="displayTime()">Display current time</button>
+    </div>
+   
+
+    <div class="datetime">
+        <p id="date"></p>
+        <p id="time"></p>
+    </div>
+
+    <h1>Masjid jamek kuala lumpur</h1>
+
+    <div class="outer-content">
+        <h2>contact us</h2>
+        <p>our current location</p>
+    </div>
+  
+
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="50%" id="gmap_canvas" src="https://maps.google.com/maps?q=Masjid%20Jamek%20Kuala%20Lumpur,%20Jalan%20Tun%20Perak,%20City%20Centre,%2050050%20Kuala%20Lumpur,%20Wilayah%20Persekutuan%20Kuala%20Lumpur&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br><style>.mapouter{position:relative;text-align:right;height:50%;width:100%;justify-content: center;align-items: center;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:841px;width:1080px;justify-content: center; align-items: center;}</style></div></div>
+   <h2>Address</h2>
+
+   <p>Jalan Tun Perak, City Centre, 50050 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>    
+
+   <p class="no-tel">Tel: +60326912829</p>
+
+</html>
